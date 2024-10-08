@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="c_learning_analytics">
+
+  <!-- Basic intro material -->
+  <title>Learning Analytics</title>
+  <shortdesc>
+    Learning Analytics are any piece of information that can help an LMS user improve learning outcomes. Users include students, teachers, administrators and decision-makers.
+  </shortdesc>
+  
+  <!-- Note the use of sections to break of the content -->
+  <conbody>
+
+    <!-- Why Use Learning Analytics? -->
+    <section>
+      <title>Why Use Learning Analytics?</title>
+      <p>
+        Learning analytics are needed to inform teachers about students, to inform the staff that support teachers and to inform students themselves. The primary need for learning analytics has been identified as promoting student retention by identifying student's status (e.g., at risk, normal, ahead), based on their activity in a course. There are a number of existing reports, blocks and other plugins for Moodle that provide analytics.
+      </p>
+    </section>
+
+    <!-- Why Use a Learning Analytic System? -->
+    <section>
+      <title>Why Use a Learning Analytic System?</title>
+      <p>
+        Although there are already a number of learning analytics, there is no API or consistent source of learning analytics that combines data from multiple sources throughout Moodle. A framework that relies on a common language will allow development of learning analytics tools that gather and present analytics information.
+      </p>
+      <p>
+        A learning analytics system should be:
+      </p>
+      <ul>
+        <li>predictive (combining currently available data to show current status and to enable prediction of future status)</li>
+        <li>proactive (notifying users when action is needed to change status)</li>
+        <li>verifiable (able to compare predictions to actual outcomes to measure accuracy)</li>
+      </ul>
+      <p>
+        Validation against historical data is important because different institutions have different outcomes they wish to predict, e.g. course completion, grades, etc. and different criteria that may be relevant, such as levels of participation, mastery of specific outcomes, depth or breadth of social network or content access, etc.. Verifying configuration(s) against historical data will give confidence of how predictive they will be in future.
+      </p>
+    
+      <p>
+        A learning analytics system will be able to use pre-fetched data that can be combined in varying ways, on the fly. Predictions will be based on a configuration (weights applied to source data) based on institution calibration and able to be adjusted on the fly.
+      </p>
+    </section>
+
+    <!-- Learning Analytics data gathering API -->
+    <section>
+      <title>Learning Analytics data gathering API</title>
+      <p>
+        The learning analytics system is made up of a number of components.
+      </p>
+
+      <simpletable>
+        <strow>
+          <stentry>Sources</stentry>
+          <stentry>Individual suppliers of pre-defined learning analytics/metrics. They are objects based on an extensible API</stentry>
+        </strow>
+        <strow>
+          <stentry>Learning Analytics API</stentry>
+          <stentry>Data tables and a calculator that takes learning analytics and calculates a status value, based on the current configuration, as it is requested.</stentry>
+        </strow>
+        <strow>
+          <stentry>User Interfaces</stentry>
+          <stentry>Data gathering and display portals that are designed to meet different user needs.</stentry>
+        </strow>
+      </simpletable>
+   
+      <fig>
+        <title>The Learning Analytics API</title>
+        <image href="assets/images/Learning_Analytics_API_diagram.png">
+          <alt>Diagram explaining the function of the Learning Analytics API.</alt>
+        </image>
+      </fig>
+    </section>
+
+  </conbody>
+</concept>
